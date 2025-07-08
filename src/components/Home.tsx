@@ -137,7 +137,7 @@ function Home() {
 
           { !correctChain && walletConnected && (
             <div className="max-w-xl mx-auto p-6 mt-4 bg-red-100 border-red-500 border-2 rounded-lg" >
-                <p className = "text-red-700" > Si prega di cambiare alla chain corretta. </p>
+                <p className = "text-red-700" > Please change to the correct chain. </p>
             </div>
           )}
 
@@ -195,17 +195,17 @@ function Home() {
         
         <div className="mt-6 max-w-xl mx-auto p-6 bg-white shadow-lg rounded-lg text-center">
           <h3 className={`text-xl font-semibold ${isTransactionPending ? "text-black" : "text-green-700"} mb-4`}>
-            {isTransactionPending ? "Transazione in corso..." : "Transazione effettuata con successo!"}
+            {isTransactionPending ? "Transaction in progress..." : "Transaction completed successfully!"}
           </h3>
           <p className="text-gray-700">
-            {isTransactionPending ? "Attendi la conferma della transazione." : "La tua prenotazione è stata confermata."}
+            {isTransactionPending ? "Please wait for transaction confirmation." : "Your booking has been confirmed."}
           </p>
           {!isTransactionPending && (
             <button
               onClick={() => setTransactionSuccess(false)}
               className="mt-4 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300"
             >
-              Torna alla Home
+              Back to Home
             </button>
           )}
         </div>
