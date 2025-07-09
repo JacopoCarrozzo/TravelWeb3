@@ -30,8 +30,8 @@ const Info: React.FC<InfoProps> = ({ name, image, fulldescription, price, onBook
         <div className="w-3/4 text-white">
           <h2 className="text-4xl font-bold mb-4">{name}</h2>
           <p className="text-lg">{fulldescription}</p>
-          <p className="text-lg mt-6">Prezzo: {price} ETH</p>
-          <p className="text-lg">Indirizzo Wallet Ethereum: {recipientAddress}</p>
+          <p className="text-lg mt-6">Price: {price} ETH</p>
+          <p className="text-lg">Ethereum Wallet Address: {recipientAddress}</p>
           <p className="text-lg">Blockchain: Sepolia Test Network</p>
         </div>
       </div>
@@ -42,7 +42,7 @@ const Info: React.FC<InfoProps> = ({ name, image, fulldescription, price, onBook
           onBookClick(price || 0, recipientAddress)}
         }
         >
-          Prenota il viaggio
+          Book the trip
         </button>
       </div>
     </div>

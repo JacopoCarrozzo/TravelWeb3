@@ -1,53 +1,48 @@
 # TravelWeb3
 
-TravelWeb3 è una dApp (applicazione decentralizzata) che utilizza la tecnologia blockchain per offrire un'esperienza di viaggio sicura e innovativa. L'app permette agli utenti di connettere il proprio wallet MetaMask e interagire con la blockchain Ethereum per inviare e ricevere criptovalute in modo semplice e sicuro.
+TravelWeb3 is a dApp (decentralized application) that uses blockchain technology to offer a secure and innovative travel experience. The app allows users to connect their MetaMask wallet and interact with the Ethereum blockchain to send and receive cryptocurrencies easily and securely.
 
-## Funzionalità principali
+## Key Features
 
-- **Connessione wallet**: Gli utenti possono connettere il proprio wallet MetaMask per interagire con la blockchain Ethereum.
-- **Visualizzazione saldo**: Una volta connesso il wallet, gli utenti possono visualizzare il loro saldo in ETH.
-- **Invio di ETH**: Gli utenti possono inviare Ethereum ad altri indirizzi direttamente dall'app, con la possibilità di inserire l'importo e l'indirizzo del destinatario.
+- **Wallet Connection**: Users can connect their MetaMask wallet to interact with the Ethereum blockchain.
+- **Balance View**: Once the wallet is connected, users can view their ETH balance.
+- **ETH Sending**: Users can send Ethereum to other addresses directly from the app, with the option to enter the amount and recipient address.
 
-## Tecnologie utilizzate
+## Technologies Used
 
-- **React**: Per costruire l'interfaccia utente dinamica.
-- **ethers.js**: Per interagire con la blockchain Ethereum.
-- **Tailwind CSS**: Per il design dell'interfaccia utente, con un layout responsivo e moderno.
-- **MetaMask**: Per la gestione del wallet e le transazioni sulla blockchain.
+- **React**: To build the dynamic user interface.
+- **ethers.js**: To interact with the Ethereum blockchain.
+- **Tailwind CSS**: For user interface design, with a responsive and modern layout.
+- **MetaMask**: For wallet management and blockchain transactions.
 
-## Installazione
+## Installation
 
-Per utilizzare TravelWeb3 sul tuo computer locale, segui questi passi:
+To use TravelWeb3 on your local computer, follow these steps:
 
-1.  **Clona il repository:**
+1. **Clone the repository:**
 
-    ```bash
-    git clone [https://github.com/JacopoLoco/TravelWeb3.git](https://github.com/JacopoLoco/TravelWeb3.git)
-    ```
+```bash
+git clone [https://github.com/JacopoCarrozzo/TravelWeb3.git](https://github.com/JacopoCarrozzo/TravelWeb3.git)
+```
 
-2.  **Accedi alla directory del progetto:**
+2. **Navigate to the project directory:**
 
-    ```bash
-    cd TravelWeb3
-    ```
+```bash
+cd TravelWeb3
+```
 
-3.  **Installazione delle dipendenze:**
+3. **Install dependencies:**
 
-    * Se il progetto utilizza npm:
+```bash
+npm install
+```
 
-        ```bash
-        npm install
-        ```
+3. **Start the project:**
 
-3.  **Avvio del progetto:**
+```bash
+npm start
+```
 
-    * Se il progetto è un'applicazione web:
+4. **Access the application:**
 
-        ```bash
-        npm start
-        ```
-
-4.  **Accesso all'applicazione:**
-
-    * Apri il tuo browser web e vai all'indirizzo `http://localhost:3000` (o l'indirizzo indicato dall'output del comando di avvio).
-
+* Open your web browser and go to `http://localhost:3000` (or the address indicated by the output of the start command).

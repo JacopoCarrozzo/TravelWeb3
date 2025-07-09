@@ -31,12 +31,12 @@ export const useTransaction = (address: string) =>{
         const { recipient, amount } = transferInfo;
     
         if (!recipient || !amount) {
-          alert("Per favore, inserisci un indirizzo e un importo!");
+          alert("Please enter an address and amount!");
           return;
         }
 
         if (recipient.toLowerCase() === address.toLowerCase()) {
-          setErrorMessage("Non puoi inviare fondi a te stesso!");
+          setErrorMessage("You cannot send funds to yourself!");
           return;
         }
     
@@ -50,7 +50,7 @@ export const useTransaction = (address: string) =>{
     
           
             if (parseFloat(balanceETH) < parseFloat(amount)) {
-            setErrorMessage("Saldo insufficiente!");
+            setErrorMessage("Insufficient balance!");
             return;
             }
 
@@ -66,13 +66,13 @@ export const useTransaction = (address: string) =>{
             setIsTransactionPending(false); 
             setErrorMessage(""); 
           } catch (error) {
-            console.error("Errore nell'invio della transazione:", error);
+            console.error("Error sending transaction:", error);
             setTransactionSuccess(false); 
             setIsTransactionPending(false);
-            setErrorMessage("Errore durante la transazione.");
+            setErrorMessage("Error during transaction.");
           }
         } else {
-          alert("Connetti prima il wallet!");
+          alert("Connect your wallet first!");
         }
       };
 

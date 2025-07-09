@@ -31,10 +31,10 @@ const connectWallet = async () => {
         
 
       } catch (error) {
-        console.error("Errore nella connessione al wallet:", error);
+        console.error("Error connecting to wallet:", error);
       }
     } else {
-      alert("MetaMask non è installato!");
+      alert("MetaMask is not installed!");
     }
     };
 
@@ -47,10 +47,10 @@ const connectWallet = async () => {
   
           setBalanceInfo((prev) => ({ ...prev, balance: formattedBalance }));
         } catch (error) {
-          console.error("Errore nel recupero del saldo:", error);
+          console.error("Error retrieving balance:", error);
         }
       } else {
-        alert("Connetti prima il wallet!");
+        alert("Connect your wallet first!");
       }
     };
 
@@ -94,7 +94,7 @@ const connectWallet = async () => {
             setCorrectChain(true);
           }
         } catch (error) {
-          console.error("Errore nel controllo della chain:", error);
+          console.error("Chain check error:", error);
         }
       }
     };
